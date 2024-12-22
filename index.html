@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link rel="stylesheet" href="./mystyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Dr. Parvez</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- nav bar -->
+    <div id="header">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top shadow">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#" style="color: gray; font-weight: bolder">DR. PARVEZ AHMED SHAIKH </a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#conferences ">Conferences </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- show case -->
+    <div id="bg-img"></div>
+
+    <!-- about me -->
+    <div id="about">
+        <div class="container">
+            <div class="card shadow">
+                <div class="row">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                        <!-- <img src="./images/photo.jpeg" width="350px"  class="img-fluid rounded-top mx-2 my-3 d-none d-lg-block custom-image-height"  /> -->
+                        <img src="" alt="image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="container">
+                            <div class="card-title ml-5 ">
+                                <h3 class="display-4 ml-5 mt-5">DR. PARVEZ AHMED SHAIKH</h3>
+                                <hr class="name_seperator">
+                            </div>
+                            <p class="text-muted ml-5">BAMS (YIC, CCH)</p>
+                        </div>
+                        <!-- <hr class="w-50 pb-1" /> -->
+                        <div class="container">
+                            <table class="table table-responsive ml-4">
+                                <tr>
+                                    <td class="text-muted">Email</td>
+                                    <td>:</td>
+                                    <td>900parvezahmed@gmail.com </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-muted">Phone</td>
+                                    <td>:</td>
+                                    <td>+91-9008130463 </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-muted">Address</td>
+                                    <td>:</td>
+                                    <td>#776, 1st Main,13th Cross,
+                                        Nagarbhavi, Bengaluru,
+                                        Karnataka 560072, India. </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon"><i
+                            class="fa fa-facebook fa-2x mx-3"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" class="social-icon"><i
+                            class="fa fa-twitter fa-2x mx-3 "></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i
+                            class="fa fa-linkedin fa-2x mx-3 "></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5 font16">
+            <!-- Section Header -->
+            <div class="row mb-4">
+                <div class="col">
+                    <span class="bg-danger text-white px-3 py-2 rounded">About Me</span>
+                    <hr class="bg-danger" />
+                </div>
+            </div>
+
+            <!-- About Me Content -->
+            <div class="row">
+                <!-- Main Content Area -->
+                <div class="col-md-12">
+                    <!-- Tabs Navigation -->
+                    <ul class="nav nav-tabs" id="profileTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description"
+                                type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education" type="button"
+                                role="tab" aria-controls="education" aria-selected="false">Education</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="achievements-tab" data-bs-toggle="tab" data-bs-target="#achievements"
+                                type="button" role="tab" aria-controls="achievements" aria-selected="false">Achievements</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="interests-tab" data-bs-toggle="tab" data-bs-target="#interests" type="button"
+                                role="tab" aria-controls="interests" aria-selected="false">Areas of Interest</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="languages-tab" data-bs-toggle="tab" data-bs-target="#languages" type="button"
+                                role="tab" aria-controls="languages" aria-selected="false">Languages</button>
+                        </li>
+                    </ul>
+                
+                    <!-- Tabs Content -->
+                    <div class="tab-content mt-3" id="profileTabsContent">
+                        <!-- Description Tab -->
+                        <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                            <p class="font16">
+                                Passionate Ayurvedic medicine enthusiast and scholar with a graduate degree in Ayurveda, focused on
+                                applying Ayurveda in healthcare. Eager to contribute to the field through research, teaching, clinical
+                                practice, and entrepreneurship.
+                            </p>
+                        </div>
+                
+                        <!-- Education Background Tab -->
+                        <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+                            <h4 class="font16 fw-bold subheading">EDUCATION BACKGROUND</h4>
+                            <p>
+                                <strong>Bachelor of Ayurvedic Medicine and Surgery (BAMS)</strong><br>
+                                Sri Dharmasthala Manjunatheshwara Institute of Ayurveda and Hospital, Bengaluru.<br>
+                                Affiliated to Rajiv Gandhi University of Health Sciences, Bengaluru.<br>
+                                <em>2017 - 2022</em>
+                            </p>
+                        </div>
+                
+                        <!-- Achievements Tab -->
+                        <div class="tab-pane fade" id="achievements" role="tabpanel" aria-labelledby="achievements-tab">
+                            <h4 class="font16 fw-bold subheading">ACHIEVEMENTS</h4>
+                            <p>
+                                Winner, District-level Badminton competition by KSPUB, Bengaluru, Oct 2016.
+                            </p>
+                        </div>
+                
+                        <!-- Areas of Interest Tab -->
+                        <div class="tab-pane fade" id="interests" role="tabpanel" aria-labelledby="interests-tab">
+                            <h4 class="font16 fw-bold subheading">AREAS OF INTEREST</h4>
+                            <ul>
+                                <li>Academics</li>
+                                <li>Research and medical writing</li>
+                                <li>Scientific deliberation</li>
+                                <li>Drug identification and authentication</li>
+                                <li>Product development</li>
+                                <li>Ayurvedic health care</li>
+                                <li>Yoga and other allied sciences</li>
+                                <li>Public health initiatives</li>
+                                <li>Hospital management</li>
+                            </ul>
+                        </div>
+                
+                        <!-- Languages Tab -->
+                        <div class="tab-pane fade" id="languages" role="tabpanel" aria-labelledby="languages-tab">
+                            <h4 class="font16 fw-bold subheading">LANGUAGES</h4>
+                            <ul>
+                                <li>Kannada</li>
+                                <li>Telugu</li>
+                                <li>Hindi</li>
+                                <li>Konkani</li>
+                                <li>English</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- skill -->
+    <!-- <div id="skills" class="mt-5">
+        <div class="container">
+            <span class="bg-primary text-white">My Skills</span>
+            <hr class="bg-primary" />
+            <div class="row">
+                <div class="col">
+                    <h4 class="font16 fw-bold subheading">HARD SKILLS</h4>
+                    <ul>
+                        <li>Academic teaching proficiency. </li>
+                        <li>Drug identification and authentication </li>
+                        <li>Research expertise </li>
+                        <li>Ayurvedic clinical diagnosis and treatment </li>
+                        <li>Product research and design </li>
+                        <li>Scientific deliberations </li>
+                    </ul>
+                    <h4 class="font16 fw-bold subheading">SOFT SKILLS </h4>
+                    <ul>
+                        <li>Organising </li>
+                        <li>Observation </li>
+                        <li>Decision making </li>
+                        <li>Communication </li>
+                        <li>Multi- tasking </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="skills" class="mt-5">
+        <div class="container">
+            <span class="bg-primary text-white">My Skills</span>
+            <hr class="bg-primary" />
+            <div class="row">
+                <!-- Hard Skills Section -->
+                <div class="col-md-6">
+                    <h4 class="font16 fw-bold subheading my-3">HARD SKILLS</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            Academic teaching proficiency
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            Drug identification and authentication
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            Research expertise
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            Ayurvedic clinical diagnosis and treatment
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            Product research and design
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            Scientific deliberations
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Soft Skills Section -->
+                <div class="col-md-6">
+                    <h4 class="font16 fw-bold subheading my-3">SOFT SKILLS</h4>
+                    <div class="accordion" id="softSkillsAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Organizing
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#softSkillsAccordion">
+                                <div class="accordion-body">
+                                    Organizing is my strong suit. I excel at planning and structuring tasks efficiently.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Observation
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#softSkillsAccordion">
+                                <div class="accordion-body">
+                                    Keen observation allows me to pay attention to details and identify patterns efficiently.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Decision Making
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#softSkillsAccordion">
+                                <div class="accordion-body">
+                                    I make well-informed and timely decisions by analyzing all available options.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Communication
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#softSkillsAccordion">
+                                <div class="accordion-body">
+                                    Strong communication skills allow me to effectively convey ideas and collaborate with
+                                    others.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Multi-tasking
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#softSkillsAccordion">
+                                <div class="accordion-body">
+                                    I excel at managing multiple tasks simultaneously without compromising quality.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Experience -->
+
+    <div id="experience">
+        <div class="container mt-5">
+            <span class="bg-success text-white">Experience</span>
+            <hr class="bg-success" />
+            <div class="row">
+                <div class="col-lg-6 mt-5">
+                    <div class="card bg-white">
+                        <!-- <img src="./images/sd.jpg" width="200 " height="80" class="img-fluid m-auto " /> -->
+                        <i class="fa-solid fa-seedling experience_icon"></i>
+                        <h3 class="text-center text-danger font20">CLINICAL REGISTRAR </h3>
+                        <h4 class="text-muted text-center font16">
+                            Abhi Ayur Holistic Health Care and Research Center, Bangalore | Sep 2022-Present.
+                        </h4>
+                        <p class="text-justify font16">
+                            Contributed through personalized treatment plans and therapy administration for VIP patients
+                            from foreign countries.
+
+                            Served as a bridge between patients and consultants, ensuring effective communication and
+                            addressing patients concerns.
+
+                            Played a role in optimizing, scheduling and change management process within the Ayurvedic
+                            wellness unit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-5">
+                    <div class="card bg-white">
+                        <!-- <img src="./images/wp1.png" width="200 " height="80" class="img-fluid m-auto " /> -->
+                        <i class="fa-solid fa-seedling experience_icon"></i>
+
+                        <h3 class="text-center text-danger font20">
+                            CLAIMS OFFICER
+                        </h3>
+                        <h4 class="text-muted text-center font16">
+                            <p class="mb-0">Apthamitra- teleconsultation in Covid 19 crisis, from Ministry of Ayush| Mar
+                                2020-Nov 2020</p>
+                            <p>Covid Medical Assistant BBMP, Bengaluru | Jun 2021-Sep 2021.</p>
+                        </h4>
+                        <p class="text-justify p-3 font16">
+                            Proven ability to process medical EMERGENCY of varying complexity with accuracy, efficiency
+                            and adherence to quality standards, utilizing a deep understanding of medical insurances
+                            policies and procedures.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-5">
+                    <div class="card bg-white">
+                        <!-- <img src="./images/Homestay.jpg" width="200 " height="80" class="img-fluid m-auto " /> -->
+                        <i class="fa-solid fa-seedling experience_icon"></i>
+
+                        <h3 class="text-center text-danger font20">JUNIOR CONSULTANT - PAIN MANAGEMENT CONSULTANT
+                             & YOGA INSTRUCTOR </h3>
+                        <h4 class="text-muted text-center font16">Abhi Ayur Holistic Health Care and Research Center, Bangalore
+                        </h4>
+                        <p class="text-justify p-3 font16">
+                            Provided personalized consultations and yoga instruction to patients, tailoring treatment
+                            plans to address individual needs and break goals.
+
+                            Demonstrated expertise in Ayurvedic principles and Yoga techniques, guiding patients towards
+                            optimal health and wellbeing.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-5">
+                    <div class="card bg-white">
+                        <!-- <img src="./images/prog.jpg" width="200 " height="80" class="img-fluid m-auto" /> -->
+                        <i class="fa-solid fa-seedling experience_icon"></i>
+
+                        <h3 class="text-center text-danger font20">
+                            ROTATORY INTERNSHIP
+                        </h3>
+                        <h4 class="text-muted text-center font16">
+                            Sri Dharmasthala Manjunatheshwara Institute of Ayurveda and Hospital, Anchepalya, Bengaluru
+                            |Aug 2022-Aug 2023.
+                        </h4>
+                        <p class="text-justify p-3 font16">
+                            Gained hands on experience in various aspects of Ayurvedic medicine, rotating through
+                            different departments to observe and assist in patient care.
+
+                            Enhanced knowledge and practical skills in Ayurvedic diagnosis, treatment planning and
+                            patient management, under the guidance of experienced Ayurvedic practitioners.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mt-5">
+                    <div class="card bg-white">
+                        <h3 class="text-center text-danger font20 mt-4">PUBLICATIONS </h3>
+
+                        <div class="text-justify p-3 font16">
+                            <ul>
+                                <li>Review of Mandukaparni from classical texts in International Ayurvedic Medical
+                                    Journal. </li>
+                                <li>Role of Ahara in the management of Obesity: A review in World Journal of
+                                    Pharmaceutical Research. </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- conferences  -->
+    <div id="conferences">
+        <div class="container my-5">
+            <span class="bg-dark text-white">Conferences </span>
+            <hr class="bg-dark" />
+            <div class="row">
+                <div class="col-md-4 mt-5">
+                    <div class="card bg-white text-center">
+                        Presented a paper titled <i>“Pranayama: The art of breath control”</i> at the <strong>PRE-CONFERENCE MEET OF
+                            GLOBAL YOGA SUMMIT</strong> on 2nd November, 2023.
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="card bg-white text-center">
+                        Presented a paper titled <i>“Pranayama: The art of breath control”</i> at a <strong>National-level poster
+                            presentation</strong> organized by <strong>Abhi Ayur Holistic Health Care and Research Center,</strong> on 19th October,
+                        2023.
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="card bg-white text-center">
+                        Presented a paper titled <i>“Efficacy of Ksheera Bala Upanaha in pain management in Janu Sandhigata
+                            Vata: A case study”</i> at a <strong>National-level paper presentation</strong> organized by <strong>Abhi Ayur Holistic
+                                Health Care and Research Center,</strong> on 28th September, 2023.
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="card bg-white text-center">
+                        Presented a paper titled <i>“Role of Ahara in the management of lifestyle diseases: A Review”</i> at
+                        <strong>AYUREXPO an International-level paper presentation</strong> organized by <strong>MINISTRY OF AYUSH</strong> at <strong>Bangalore.</strong>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="card bg-white text-center">
+                        Presented a paper titled <i>“Covid Ayurveda kit in Covid patients BNI Champions Bangalore chapter”</i>
+                        a <strong>National-level online paper presentation</strong>organized by <strong>Abhi Ayur Holistic
+                            Health Care and Research Center,</strong> in July 2022. </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="card bg-white text-center">
+                        Participated and presented a paper titled <i>“Alcohol addiction and its management through
+                            Ayurveda”</i> in an <strong>International-level online paper presentation competition</strong> organized by <strong>JIGNASA</strong>
+                        at the <strong>AKHILA BHARATIYA PARISHAD,</strong> Bangalore in December 2022. </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid footer_background">
+        <div class="container footer_details">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-md-5 py-3">
+                    <div class="footer_email_phone">
+                        <p class="mb-1">
+                            <strong class="text-white">Email:</strong>
+                            <a class="text-white hover_text"
+                                href="mailto:900parvezahmed@gmail.com">900parvezahmed@gmail.com</a>
+                        </p>
+                        <p class="mb-0">
+                            <strong class="text-white">Phone:</strong>
+                            <a class="text-white hover_text" href="tel:+919008130463">+91-9008130463</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Referees Section -->
+                <div class="col-md-7 py-3">
+                    <h5 class="text-white">REFEREES</h5>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row mb-2">
+                                <div class="col-md-6 text-white"><strong> Dr. Mukhtar Ahmed |</strong>
+                                    Medical practitioner, Sirsi</div>
+                                <div class="col-md-6"><a class="text-white hover_text">drmukhtar442@gmail.com </a></div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-6 text-white"><strong>Dr. P.N. Rao |</strong>
+                                    SDMCAH, Hassan</div>
+                                <div class="col-md-6"><a class="text-white hover_text">profpnrao@sdmcahhassan.org </a></div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-6 text-white"><strong>Dr. Abdul Khader | </strong>
+                                    SKAMC, Bengaluru</div>
+                                <div class="col-md-6"><a class="text-white hover_text">abukaya2003@gmail.com </a></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col">
+                <p class="text-white text-center pt-2">
+                    Dr. Parvez Ahmed Shaikh &copy; 2024
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/c4ad973a2c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

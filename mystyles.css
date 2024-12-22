@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif';
+}
+
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+body {
+    background: #fff;
+}
+
+#header a:hover {
+    color: #fff;
+}
+
+#bg-img {
+    position: relative;  /* Positioning context for the pseudo-element */
+    background: url(./images/mainimg2.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+#bg-img::before {
+    content: "";  /* Needed to create the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);  /* Black color with 50% opacity */
+    z-index: 0;  /* Ensures the overlay is on top of the background */
+}
+
+#about {
+    margin-top: -200px;
+}
+
+#about .card-footer{
+    background-color: #3598ab;
+}
+
+#about .card-footer .fa {
+    color: #fff;
+}
+
+#about .card-footer .fa:hover {
+    color: black;
+}
+
+#about fa {
+    color: #fff;
+}
+
+#about span {
+    padding: 10px 20px; /* Top and bottom padding of 10px, left and right padding of 20px */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    width: 250px; /* Fixed width for the span */
+    display: inline-block; /* Makes the span behave like a block element, respecting width */
+    text-align: center; 
+    letter-spacing: 3px;
+}
+
+#about hr {
+    border-width: 3px;
+    margin-top: 1px;
+}
+
+#skills span {
+    padding: 10px 20px; /* Top and bottom padding of 10px, left and right padding of 20px */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    width: 250px; /* Fixed width for the span */
+    display: inline-block; /* Makes the span behave like a block element, respecting width */
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#skills hr {
+    border-width: 3px;
+    margin-top: 1px;
+}
+
+#experience span {
+    padding: 10px 20px; /* Top and bottom padding of 10px, left and right padding of 20px */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    width: 250px; /* Fixed width for the span */
+    display: inline-block; /* Makes the span behave like a block element, respecting width */
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#experience hr {
+    border-width: 3px;
+    margin-top: 1px;
+    margin-bottom: 0px;
+}
+
+
+#experience .card {
+    border-top: 3px solid #e7b13c;
+    height: 100%; /* Make all cards stretch to the same height */
+    display: flex;
+    /* flex-direction: column; Align content vertically */
+    justify-content: space-between; /* Ensure even spacing */
+    padding: 20px;
+    /* text-align: justify; */
+}
+
+#experience .row {
+    
+    display: flex; /* Ensure the row layout remains flexible */
+    flex-wrap: wrap; /* Wrap items if needed */
+}
+
+#experience .card img {
+    max-width: 100%;
+    height: auto;
+}
+
+#experience p.lead {
+    margin-bottom: 0; /* Prevent extra spacing at the bottom */
+}
+
+#experience .experience_icon{
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0px;
+    color: green
+}
+
+
+#conferences  span {
+    padding: 10px 20px; /* Top and bottom padding of 10px, left and right padding of 20px */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    width: 250px; /* Fixed width for the span */
+    display: inline-block; /* Makes the span behave like a block element, respecting width */
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#conferences hr {
+    border-width: 3px;
+    margin-top: 1px;
+    margin-bottom: 0px;
+}
+
+#conferences .card {
+    border-top: 3px solid #e7b13c;
+    padding: 20px;
+    height: 100%; /* Make all cards stretch to the same height */
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: space-between; /* Ensure even spacing */
+}
+
+#conferences .row {
+    display: flex; /* Ensure the row layout remains flexible */
+    flex-wrap: wrap; /* Wrap items if needed */
+}
+
+#about .name_seperator{
+    border: 1px solid #000; /* Black line */
+    width: 90%; /* Adjust width */
+    border-width: 1px;
+}
+
+.footer_background{
+    background-color: #202529f0;
+}
+
+.footer_details{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    font-size: 14px;
+}
+
+.hover_text{
+    cursor: pointer;
+}
+
+.social-icon i {
+    color: white; /* Default color */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.social-icon:hover i {
+    color: yellow; /* Change to desired hover color */
+}
+
+.footer_email_phone{
+    margin-top: 30px;
+}
+
+.font20{
+    font-size: 20px;
+}
+
+.font16{
+    font-size: 16px;
+}
+
+.font14{
+    font-size: 14px;
+}
+
+.subheading{
+    color: #3598ab;
+    text-decoration: underline;
+}
+
+.card{
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* subtle shadow effect */
+
+}
+
+.custom-image-height {
+    object-fit: cover; /* Optional: Ensures the image maintains its aspect ratio */
+}
+
